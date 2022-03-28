@@ -1,0 +1,131 @@
+object FormPrincipale: TFormPrincipale
+  Left = 0
+  Top = 0
+  ActiveControl = btnSwitchTheme
+  Caption = 'Forme principale'
+  ClientHeight = 491
+  ClientWidth = 385
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object MainLayout: TLayout
+    Align = Client
+    Size.Width = 385.000000000000000000
+    Size.Height = 491.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object GroupBox1: TGroupBox
+      Align = Top
+      Size.Width = 385.000000000000000000
+      Size.Height = 435.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Control Test'
+      TabOrder = 8
+      object Label1: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Label1'
+        TabOrder = 3
+      end
+      object RadioButton1: TRadioButton
+        Position.X = 16.000000000000000000
+        Position.Y = 53.000000000000000000
+        TabOrder = 4
+        Text = 'RadioButton1'
+      end
+      object TrackBar1: TTrackBar
+        CanParentFocus = True
+        Orientation = Horizontal
+        Position.X = 16.000000000000000000
+        Position.Y = 96.000000000000000000
+        TabOrder = 5
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'Hello world')
+        Position.X = 16.000000000000000000
+        Position.Y = 208.000000000000000000
+        Size.Width = 233.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        Viewport.Width = 233.000000000000000000
+        Viewport.Height = 121.000000000000000000
+      end
+      object btnNewWindow: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 337.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Child window'
+        OnClick = btnNewWindowClick
+      end
+      object btnMessage: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 385.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+        Text = 'Message'
+        OnClick = btnMessageClick
+      end
+      object ComboTrackBar1: TComboTrackBar
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Cursor = crIBeam
+        KeyboardType = NumberPad
+        Position.X = 200.000000000000000000
+        Position.Y = 49.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnDock: TButton
+        Position.X = 200.000000000000000000
+        Position.Y = 337.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Docked window'
+        OnClick = btnDockClick
+      end
+      object btnDialog: TButton
+        Position.X = 200.000000000000000000
+        Position.Y = 387.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        Text = 'Dialog'
+        OnClick = btnDialogClick
+      end
+      object DateEdit1: TDateEdit
+        Date = 44648.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 136.000000000000000000
+        TabOrder = 34
+      end
+    end
+    object btnSwitchTheme: TButton
+      Anchors = [akLeft, akBottom]
+      Position.X = 16.000000000000000000
+      Position.Y = 443.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Change theme'
+      OnClick = btnSwitchThemeClick
+    end
+  end
+end

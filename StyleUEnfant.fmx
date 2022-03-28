@@ -1,0 +1,85 @@
+object FormSecond: TFormSecond
+  Left = 0
+  Top = 0
+  ActiveControl = Button1
+  Caption = 'Forme secondaire'
+  ClientHeight = 243
+  ClientWidth = 279
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object MainLayout: TLayout
+    Align = Client
+    Size.Width = 279.000000000000000000
+    Size.Height = 243.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Cancel = True
+      Default = True
+      Position.X = 96.000000000000000000
+      Position.Y = 213.000000000000000000
+      TabOrder = 1
+      Text = 'Fermer'
+      OnClick = Button1Click
+    end
+    object ModeLabel: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'ModeLabel'
+      TabOrder = 3
+    end
+    object Switch1: TSwitch
+      IsChecked = False
+      Position.X = 40.000000000000000000
+      Position.Y = 178.000000000000000000
+      TabOrder = 2
+      OnSwitch = Switch1Switch
+    end
+    object Panel1: TPanel
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 5.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 5.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 88.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'background'
+      TabOrder = 4
+      object Label1: TLabel
+        Align = Client
+        Size.Width = 103.000000000000000000
+        Size.Height = 78.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Label in a panel style lookup background'
+        TabOrder = 0
+      end
+    end
+    object Panel2: TPanel
+      Padding.Left = 5.000000000000000000
+      Padding.Top = 5.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Padding.Bottom = 5.000000000000000000
+      Position.X = 151.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 88.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object Label2: TLabel
+        Align = Client
+        Size.Width = 110.000000000000000000
+        Size.Height = 78.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Label in a panel'
+        TabOrder = 0
+      end
+    end
+  end
+end
