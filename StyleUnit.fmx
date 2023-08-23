@@ -25,6 +25,7 @@ object FormPrincipale: TFormPrincipale
       Size.PlatformDefault = False
       Text = 'Control Test'
       TabOrder = 8
+      OnMouseMove = GroupBox1MouseMove
       object Label1: TLabel
         Position.X = 16.000000000000000000
         Position.Y = 24.000000000000000000
@@ -55,8 +56,8 @@ object FormPrincipale: TFormPrincipale
         Size.Height = 121.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 13
-        Viewport.Width = 233.000000000000000000
-        Viewport.Height = 121.000000000000000000
+        Viewport.Width = 229.000000000000000000
+        Viewport.Height = 117.000000000000000000
       end
       object btnNewWindow: TButton
         Position.X = 16.000000000000000000
@@ -114,6 +115,30 @@ object FormPrincipale: TFormPrincipale
         Position.X = 16.000000000000000000
         Position.Y = 136.000000000000000000
         TabOrder = 34
+      end
+      object Label2: TLabel
+        Position.X = 200.000000000000000000
+        Position.Y = 104.000000000000000000
+        Text = 'Mouse position X Y'
+        TabOrder = 38
+      end
+      object PosX: TLabel
+        Position.X = 200.000000000000000000
+        Position.Y = 136.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'X'
+        TabOrder = 40
+      end
+      object PosY: TLabel
+        Position.X = 200.000000000000000000
+        Position.Y = 161.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Y'
+        TabOrder = 39
       end
     end
     object btnSwitchTheme: TButton

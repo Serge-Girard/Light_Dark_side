@@ -26,6 +26,9 @@ type
     btnDialog: TButton;
     DateEdit1: TDateEdit;
     MainLayout: TLayout;
+    Label2: TLabel;
+    PosX: TLabel;
+    PosY: TLabel;
     procedure btnSwitchThemeClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnNewWindowClick(Sender: TObject);
@@ -33,6 +36,8 @@ type
     procedure FormShow(Sender: TObject);
     procedure btnDialogClick(Sender: TObject);
     procedure btnDockClick(Sender: TObject);
+    procedure GroupBox1MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Single);
   private
     { Déclarations privées }
   public
@@ -108,6 +113,13 @@ end;
 procedure TFormPrincipale.FormShow(Sender: TObject);
 begin
 {$IFDEF ANDROID}DataStyle.SetStyle; {$ENDIF}
+end;
+
+procedure TFormPrincipale.GroupBox1MouseMove(Sender: TObject;
+  Shift: TShiftState; X, Y: Single);
+begin
+Posx.Text:=Format('X : %3.2f',[X]);
+PosY.Text:=Format('Y : %3.2f',[Y]);
 end;
 
 end.
